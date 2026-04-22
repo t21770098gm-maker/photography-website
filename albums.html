@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums - Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="albums.html" class="active">Albums</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="albums-section">
+                <div class="albums-header">
+                    <h1>Albums</h1>
+                    <div class="sort-controls">
+                        <label for="sort-select">Sort by:</label>
+                        <select id="sort-select">
+                            <option value="date">Date (Newest First)</option>
+                            <option value="date-old">Date (Oldest First)</option>
+                            <option value="name">Name (A-Z)</option>
+                            <option value="name-desc">Name (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="albums-grid" id="albums-grid">
+                    <!-- Albums will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
